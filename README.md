@@ -4,6 +4,8 @@ This project contains **Selenium WebDriver automation test scripts** for [Automa
 It is built for practicing automation testing concepts such as **locators, Page Object Model (POM), TestNG, and reporting**.
 
 -----
+```plaintext
+
 ## Project Structure
 
 AutomationExercise/
