@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<parameter name="username" value="users9"></parameter>
+	<parameter name="mail" value="users9@gmail.com"></parameter>
+	
+	<parameter name="logoutMail" value="users9@gmail.com"></parameter>
+	<parameter name="logoutPassword" value="users9@123"></parameter>
+	
+	<parameter name="loginmail" value="users2@gmail.com"></parameter>
+	<parameter name="loginpassword" value="usersname2"></parameter>
+
+	<listeners>
+		<listener class-name="listeners.TestListeners"></listener>
+	</listeners>
+
+
+	  <test thread-count="5" name="Test">
+	  	<parameter name ="os" value="Windows"/>
+	  	<parameter name="browser" value="chrome"/>	
+	    <classes>
+
+			 <class name ="tests.SignUpTest"/> 
+			 <class name="tests.LoginTest"/>
+	    	 <class name="tests.LoginwithInvalidCredantials"/> 
+			 <class name ="tests.logoutUserTest"/>
+			 <class name="tests.SignuptestExistingMail"/>
+	         <class name ="tests.ContactUsTest"/> 			
+			 <class name ="tests.TestCasesTest"/> 
+	   		 <class name ="tests.ProductDetailsTest"/> 
+	   		 <class name="tests.SearchProductTest"/> 
+	   		 <class name="tests.SubscriptionTest"/>
+
+
+	   	</classes>
+	  </test> <!-- Test -->
+</suite> <!-- Suite -->

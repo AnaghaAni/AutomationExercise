@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Sep 14 17:14:58 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>178 seconds (178492 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.ContactUsTest.testContactUs()'><b>testContactUs</b><br>Test class: tests.ContactUsTest<br>Parameters: Ravi, ravi@yahoo.com, Payment Issue, Payment gateway failed, </td>
+<td></td>
+<td>6</td>
+<td>tests.ContactUsTest@758f4f03</td></tr>
+<tr>
+<td title='tests.SignUpTest.testUserRegistrationFlow()'><b>testUserRegistrationFlow</b><br>Test class: tests.SignUpTest<br>Parameters: {lastName=Doe, country=India, year=2003, city=Kochi, address1=Addr1Line1, mobileNo=9999911111, title=Mr, zipcode=682001, firstName=John, password=pass@123, month=July, company=TestCompany, state=Kerala, day=3, email=users001@gmail.com, username=users001}</td>
+<td></td>
+<td>12</td>
+<td>tests.SignUpTest@21ec5d87</td></tr>
+<tr>
+<td title='tests.SignUpTest.testUserRegistrationFlow()'><b>testUserRegistrationFlow</b><br>Test class: tests.SignUpTest<br>Parameters: {lastName=Smith, country=India, year=1999, city=New Delhi, address1=Addr1Line2, mobileNo=8888822222, title=Mrs, zipcode=110001, firstName=Alice, password=pass@456, month=May, company=CompanyX, state=Delhi, day=10, email=users002@gmail.com, username=users002}</td>
+<td></td>
+<td>11</td>
+<td>tests.SignUpTest@21ec5d87</td></tr>
+<tr>
+<td title='tests.SignUpTest.testUserRegistrationFlow()'><b>testUserRegistrationFlow</b><br>Test class: tests.SignUpTest<br>Parameters: {lastName=Johnson, country=India, year=2001, city=Bangalore, address1=Addr1Line3, mobileNo=7777733333, title=Mr, zipcode=560001, firstName=Bob, password=pass@789, month=December, company=TechCorp, state=Karnataka, day=15, email=users003@gmail.com, username=users003}</td>
+<td></td>
+<td>13</td>
+<td>tests.SignUpTest@21ec5d87</td></tr>
+<tr>
+<td title='tests.TestCasesTest.testTestCases()'><b>testTestCases</b><br>Test class: tests.TestCasesTest</td>
+<td></td>
+<td>2</td>
+<td>tests.TestCasesTest@182f1e9a</td></tr>
+<tr>
+<td title='tests.SubscriptionTest.testSubscription()'><b>testSubscription</b><br>Test class: tests.SubscriptionTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SubscriptionTest@69f63d95</td></tr>
+<tr>
+<td title='tests.logoutUserTest.logoutTest()'><b>logoutTest</b><br>Test class: tests.logoutUserTest<br>Parameters: users9@gmail.com, users9@123</td>
+<td></td>
+<td>4</td>
+<td>tests.logoutUserTest@5cc5b667</td></tr>
+<tr>
+<td title='tests.ContactUsTest.testContactUs()'><b>testContactUs</b><br>Test class: tests.ContactUsTest<br>Parameters: Meera, meera@hotmail.com, Delivery Delay, Delivery was delayed by 3 days, </td>
+<td></td>
+<td>3</td>
+<td>tests.ContactUsTest@758f4f03</td></tr>
+<tr>
+<td title='tests.LoginTest.testLogin()'><b>testLogin</b><br>Test class: tests.LoginTest<br>Parameters: {=, password=users7@123, username=users7@gmail.com}</td>
+<td></td>
+<td>5</td>
+<td>tests.LoginTest@5398edd0</td></tr>
+<tr>
+<td title='tests.SearchProductTest.testSearchProduct()'><b>testSearchProduct</b><br>Test class: tests.SearchProductTest<br>Parameters: Jeans</td>
+<td></td>
+<td>4</td>
+<td>tests.SearchProductTest@660e9100</td></tr>
+<tr>
+<td title='tests.LoginTest.testLogin()'><b>testLogin</b><br>Test class: tests.LoginTest<br>Parameters: {=, password=users10@123, username=users10@gmail.com}</td>
+<td></td>
+<td>9</td>
+<td>tests.LoginTest@5398edd0</td></tr>
+<tr>
+<td title='tests.SignuptestExistingMail.testWithExistingMail()'><b>testWithExistingMail</b><br>Test class: tests.SignuptestExistingMail<br>Parameters: users9, users9@gmail.com</td>
+<td></td>
+<td>2</td>
+<td>tests.SignuptestExistingMail@61edc883</td></tr>
+<tr>
+<td title='tests.SearchProductTest.testSearchProduct()'><b>testSearchProduct</b><br>Test class: tests.SearchProductTest<br>Parameters: Cotton</td>
+<td></td>
+<td>4</td>
+<td>tests.SearchProductTest@660e9100</td></tr>
+<tr>
+<td title='tests.LoginwithInvalidCredantials.testLoginWithInvalidData()'><b>testLoginWithInvalidData</b><br>Test class: tests.LoginwithInvalidCredantials<br>Parameters: users2@gmail.com, usersname2</td>
+<td></td>
+<td>2</td>
+<td>tests.LoginwithInvalidCredantials@b5cc23a</td></tr>
+<tr>
+<td title='tests.ContactUsTest.testContactUs()'><b>testContactUs</b><br>Test class: tests.ContactUsTest<br>Parameters: Anu, anu@gmail.com, Regarding Service, Packing should be improved, C:\Users\HP\OneDrive\Documents\msg.docx</td>
+<td></td>
+<td>9</td>
+<td>tests.ContactUsTest@758f4f03</td></tr>
+<tr>
+<td title='tests.ProductDetailsTest.testProductTest()'><b>testProductTest</b><br>Test class: tests.ProductDetailsTest</td>
+<td></td>
+<td>4</td>
+<td>tests.ProductDetailsTest@6928f576</td></tr>
+</table><p>
+</body>
+</html>
