@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import utils.waitUtils;
+
 
 	
 
@@ -16,11 +18,18 @@ public class ProductsPage extends BasePage {
 	 // Locators
 	 By searchLoc = By.id("search_product");
 	 By searchBtn = By.id("submit_search");
+	 By allProductListLoc = By.cssSelector(".single-products");
+	
 	 By searchTitleLoc = By.cssSelector(".features_items>.title.text-center");
 	 By allProductLoc = By.xpath("//h2[text()='All Products']");
 	 By viewProductLoc = By.xpath("//a[@href='/product_details/1']");
 	 By searchProductList = By.cssSelector(".productinfo.text-center p");
-	
+	 By viewCartLoc = By.cssSelector("li>a[href='/view_cart']");
+	 By productCostLoc = By.cssSelector(".productinfo > h2");
+	 By continueShoppingBtnLoc = By.xpath("//button[text()='Continue Shopping']");
+	 By popUploc = By.cssSelector(".modal-content");
+	 
+	 
 	 // Constructor
 	 public ProductsPage(WebDriver driver) 
 	 {
@@ -39,11 +48,7 @@ public class ProductsPage extends BasePage {
 	     return getCurrentUrl().contains("/products");
 	 }
 	
-	 // Click on "View Product" link for first product
-	 public void clickViewProduct() 
-	 {
-	     click(viewProductLoc);
-	 }
+	
 	
 	 // Verify if All Products section is visible
 	 public boolean isAllProduct() 
@@ -51,6 +56,20 @@ public class ProductsPage extends BasePage {
 	     return isElementVisible(allProductLoc);
 	 }
 	
+	 // Verify if search title is visible
+	 public boolean isSearchTitle() 
+	 {
+	     return isElementVisible(searchTitleLoc);
+	 }
+	 
+	 
+	 // Check if search results are displayed
+	 public boolean isSearchedResultDisplayed() 
+	 {
+	     return productList().size() > 0;
+	 }
+	   
+	 
 	 // Search a product by name
 	 public void searchProduct(String productName)
 	 {
@@ -58,10 +77,13 @@ public class ProductsPage extends BasePage {
 	     click(searchBtn);
 	 }
 	
-	 // Verify if search title is visible
-	 public boolean isSearchTitle() 
+	 
+	 // Click on "View Product" link for first product
+	 public void clickViewProduct(int productId) 
 	 {
-	     return isElementVisible(searchTitleLoc);
+		 By viewProductLoc = By.xpath("//a[@href='/product_details/"+productId+"']");
+		 scrollIntoView(findElement(viewProductLoc));
+		 click(viewProductLoc);
 	 }
 	
 	 // Get list of searched product names
@@ -75,10 +97,44 @@ public class ProductsPage extends BasePage {
 	     return productList;
 	 }
 	
-	 // Check if search results are displayed
-	 public boolean isSearchedResultDisplayed() 
-	 {
-	     return productList().size() > 0;
-	 }
+
+	 
+	// Adds a product to the cart based on its productId	
+	  public void addProductToCart(int productId) 
+	  {
+		   By addToCartBtn = By.xpath("//a[@data-product-id='"+productId+"']");
+		   moveToElement(findElements(allProductListLoc).get(productId));
+		   scrollIntoView(findElement(addToCartBtn));
+		   click(addToCartBtn);
+	  }
+	  
+	 // Get product name in cart by productId
+	  public String getProductNameIncart(int productId)
+	  {
+		  By productName = By.xpath("//a[@data-product-id='"+productId+"']//ancestor::div[@class='productinfo text-center']//p");
+		  return pageText(productName);
+	  }
+	  
+
+	  // Get product price in cart by productId
+	  public String getProductPriceIncart(int productId)
+	  {
+		  By productPrice = By.xpath("//a[@data-product-id='"+productId+"']/ancestor::div[@class='productinfo text-center']/h2");
+		  return pageText( productPrice );
+	  }
+	  
+	  // Click "View Cart" button in popup
+	  public void clickOnViewCart()
+	  {
+		 waitUtils.waitForVisibility(driver,popUploc);
+		 jsClick(waitUtils.waitForElementToBeClickable(driver,viewCartLoc));	
+	
+	  }
+	 
+	 // Click "Continue Shopping" button
+	  public void clickOnContinueShoppingBtn()
+	  {
+		  click(continueShoppingBtnLoc);
+	  }
 }
 

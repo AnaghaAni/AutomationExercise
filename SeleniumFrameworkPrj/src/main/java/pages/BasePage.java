@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 //BasePage class: Contains common Selenium actions that can be reused across all pages
@@ -27,6 +28,11 @@ public class BasePage {
 	 {
 	     js.executeScript("arguments[0].scrollIntoView(true);", element);
 	 }
+	 
+	 public void jsClick(WebElement element)
+	 {
+		 js.executeScript("arguments[0].click();", element);
+	 }
 	
 	 // Clicks on an element located by By locator
 	 public void click(By clickLoc) 
@@ -37,8 +43,9 @@ public class BasePage {
 	 // Types text into an input field after clearing it
 	 public void type(By textLoc, String text) 
 	 {
-	     driver.findElement(textLoc).clear();
-	     driver.findElement(textLoc).sendKeys(text);
+		   WebElement inputField = driver.findElement(textLoc);
+		    inputField.clear();             
+		    inputField.sendKeys(text); 
 	 }
 	
 	 // Selects a value from a dropdown by visible text
@@ -46,6 +53,18 @@ public class BasePage {
 	 {
 	     Select select = new Select(driver.findElement(selectLoc));
 	     select.selectByVisibleText(day);
+	 }
+	 
+	 
+	 public Actions action()
+	 {
+		 Actions action = new Actions(driver);
+		 return action;
+	 }
+	 
+	 public void moveToElement(WebElement element) 
+	 {
+		 action().moveToElement(element).perform();
 	 }
 	
 	 // Returns a single WebElement
@@ -106,6 +125,12 @@ public class BasePage {
 	 {
 	     return driver.findElement(locator).getText();
 	 }
+	 
+	public String pageTexts(By locator, int index)
+	{
+		 List<WebElement> elements = findElements(locator);
+		return elements.get(index).getText();
+	}
 	
 	 // Checks if an element is visible on the page
 	 public boolean isElementVisible(By locator) 

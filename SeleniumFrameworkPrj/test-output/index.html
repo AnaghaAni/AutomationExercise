@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,51 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods,   16 passed</span>
+                    <span class="method-stats">24 methods, 7 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLogin({=, password=users15, username=users15@gmail.com})">testLogin({=, password=users15, username=users15@gmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ProductDetailsTest" class="method navigator-link" hash-for-method="testProductTest">testProductTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchProductTest" class="method navigator-link" hash-for-method="testSearchProduct(Jeans)">testSearchProduct(Jeans)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SearchProductTest" class="method navigator-link" hash-for-method="testSearchProduct(Cotton)">testSearchProduct(Cotton)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SignUpTest" class="method navigator-link" hash-for-method="testUserRegistrationFlow({lastName=, country=, year=, city=, address1=, mobileNo=, title=, zipcode=, firstName=, password=, m...)">testUserRegistrationFlow({lastName=, country=, year=, city=, address1=, mobileNo=, title=, zipcode=, firstName=, password=, m...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.VerifyProductQuantityInCart" class="method navigator-link" hash-for-method="testVerifyProductQuantityInCart">testVerifyProductQuantityInCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ViewCategoryProducts" class="method navigator-link" hash-for-method="testViewCategoryProducts">testViewCategoryProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +147,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.logoutUserTest" class="method navigator-link" hash-for-method="logoutTest(users9@gmail.com, users9@123)">logoutTest(users9@gmail.com, users9@123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.logoutUserTest" class="method navigator-link" hash-for-method="logoutTest(use11@gmail.com, use11)">logoutTest(use11@gmail.com, use11)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.ContactUsTest" class="method navigator-link" hash-for-method="testContactUs(Ravi, ravi@yahoo.com, Payment Issue, Payment gateway failed, )">testContactUs(Ravi, ravi@yahoo.com, Payment Issue, Payment gateway failed, )</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.AddProductsInCart" class="method navigator-link" hash-for-method="testAddProductsInCart(1, 2)">testAddProductsInCart(1, 2)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.ContactUsTest" class="method navigator-link" hash-for-method="testContactUs(Meera, meera@hotmail.com, Delivery Delay, Delivery was delayed by 3 days, )">testContactUs(Meera, meera@hotmail.com, Delivery Delay, Delivery was delayed by 3 days, )</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.AddProductsInCart" class="method navigator-link" hash-for-method="testAddProductsInCart(3, 4)">testAddProductsInCart(3, 4)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -123,12 +167,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLogin({=, password=users7@123, username=users7@gmail.com})">testLogin({=, password=users7@123, username=users7@gmail.com})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactUsTest" class="method navigator-link" hash-for-method="testContactUs(Meera, meera@hotmail.com, Delivery Delay, Delivery was delayed by 3 days, )">testContactUs(Meera, meera@hotmail.com, Delivery Delay, Delivery was delayed by 3 days, )</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLogin({=, password=users10@123, username=users10@gmail.com})">testLogin({=, password=users10@123, username=users10@gmail.com})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactUsTest" class="method navigator-link" hash-for-method="testContactUs(Ravi, ravi@yahoo.com, Payment Issue, Payment gateway failed, )">testContactUs(Ravi, ravi@yahoo.com, Payment Issue, Payment gateway failed, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLogin({=, password=users16, username=users16@gmail.com})">testLogin({=, password=users16, username=users16@gmail.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,22 +187,27 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.ProductDetailsTest" class="method navigator-link" hash-for-method="testProductTest">testProductTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.PlaceOrderRegisterBeforeCheckout" class="method navigator-link" hash-for-method="testPlaceOrderRegisterBeforeCheckout({lastName=Doe, country=India, cardName=visa, productId=1, year=1990, city=Kottayam, address1=123 Mai...)">testPlaceOrderRegisterBeforeCheckout({lastName=Doe, country=India, cardName=visa, productId=1, year=1990, city=Kottayam, address1=123 Mai...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.SearchProductTest" class="method navigator-link" hash-for-method="testSearchProduct(Jeans)">testSearchProduct(Jeans)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.PlaceOrderRegisterWhileCheckout" class="method navigator-link" hash-for-method="testPlaceOrderRegisterWhileCheckout({lastName=Doe, country=India, cardName=visa, productId=1, year=1990, city=Kottayam, address1=123 Mai...)">testPlaceOrderRegisterWhileCheckout({lastName=Doe, country=India, cardName=visa, productId=1, year=1990, city=Kottayam, address1=123 Mai...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.SearchProductTest" class="method navigator-link" hash-for-method="testSearchProduct(Cotton)">testSearchProduct(Cotton)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.RemoveProductsFromCart" class="method navigator-link" hash-for-method="testRemoveProductsFromCart(1)">testRemoveProductsFromCart(1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.SubscriptionTest" class="method navigator-link" hash-for-method="testSubscription">testSubscription</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SubscriptionInCartPageTest" class="method navigator-link" hash-for-method="testSubscriptionInCartPageTest">testSubscriptionInCartPageTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -173,11 +227,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.SignUpTest" class="method navigator-link" hash-for-method="testUserRegistrationFlow({lastName=Johnson, country=India, year=2001, city=Bangalore, address1=Addr1Line3, mobileNo=777773333...)">testUserRegistrationFlow({lastName=Johnson, country=India, year=2001, city=Bangalore, address1=Addr1Line3, mobileNo=777773333...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.SignuptestExistingMail" class="method navigator-link" hash-for-method="testWithExistingMail(users9, users9@gmail.com)">testWithExistingMail(users9, users9@gmail.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -193,41 +242,48 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.logoutUserTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.VerifyProductQuantityInCart</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="logoutTest(users9@gmail.com, users9@123)">
-                  </a> <!-- logoutTest(users9@gmail.com, users9@123) -->
-                  <span class="method-name">logoutTest</span>
-                  <span class="parameters">(users9@gmail.com,users9@123)</span>
+                  <a name="testVerifyProductQuantityInCart">
+                  </a> <!-- testVerifyProductQuantityInCart -->
+                  <span class="method-name">testVerifyProductQuantityInCart</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/product_details/1&quot; style=&quot;color: brown;&quot;&gt;...&lt;/a&gt; is not clickable at point (498, 514). Other element would receive the click: &lt;iframe id=&quot;aswift_3&quot; name=&quot;aswift_3&quot; style=&quot;min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;728&quot; height=&quot;90&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20251118/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=4&amp;amp;uci=a!4&amp;amp;btvi=2&quot; data-google-container-id=&quot;a!4&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CKqHjqvslJEDFX7OPAIdLyMvTQ&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=142.0.7444.176)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [16dcb3e45fb802833589bc4c84b09cc7, clickElement {id=f.52EDC2FE437C267F3B81A30CC8036CD6.d.386B06DA3F176F4AA4708086FE6BFDDA.e.48}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:8690}, goog:processID: 11368, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:8690/devtool..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (16dcb3e45fb802833589bc4c84b09cc7)] -&gt; xpath: //a[@href=&apos;/product_details/1&apos;]]
+Session ID: 16dcb3e45fb802833589bc4c84b09cc7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.BasePage.click(BasePage.java:40)
+	at pages.ProductsPage.clickViewProduct(ProductsPage.java:85)
+	at tests.VerifyProductQuantityInCart.testVerifyProductQuantityInCart(VerifyProductQuantityInCart.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.SignuptestExistingMail</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWithExistingMail(users9, users9@gmail.com)">
-                  </a> <!-- testWithExistingMail(users9, users9@gmail.com) -->
-                  <span class="method-name">testWithExistingMail</span>
-                  <span class="parameters">(users9,users9@gmail.com)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">tests.SearchProductTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -237,6 +293,30 @@
                   </a> <!-- testSearchProduct(Jeans) -->
                   <span class="method-name">testSearchProduct</span>
                   <span class="parameters">(Jeans)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; id=&quot;submit_search&quot; class=&quot;btn btn-default btn-lg&quot;&gt;...&lt;/button&gt; is not clickable at point (503, 473). Other element would receive the click: &lt;iframe id=&quot;aswift_4&quot; name=&quot;aswift_4&quot; style=&quot;min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;728&quot; height=&quot;90&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20251118/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=5&amp;amp;uci=a!5&amp;amp;btvi=2&quot; data-google-container-id=&quot;a!5&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CJXCuYrslJEDFcZYnQkd5jQC_w&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=142.0.7444.176)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ece233700031cd79ff160dd15d26f2a, clickElement {id=f.36D990E3084265DF4992EB7ED5BF19F0.d.D001749CA80E77B59ABEE43E7315126E.e.74}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:13808}, goog:processID: 8256, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:13808/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2ece233700031cd79ff160dd15d26f2a)] -&gt; id: submit_search]
+Session ID: 2ece233700031cd79ff160dd15d26f2a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.BasePage.click(BasePage.java:40)
+	at pages.ProductsPage.searchProduct(ProductsPage.java:77)
+	at tests.SearchProductTest.testSearchProduct(SearchProductTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -245,6 +325,168 @@
                   </a> <!-- testSearchProduct(Cotton) -->
                   <span class="method-name">testSearchProduct</span>
                   <span class="parameters">(Cotton)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; id=&quot;submit_search&quot; class=&quot;btn btn-default btn-lg&quot;&gt;...&lt;/button&gt; is not clickable at point (503, 473). Other element would receive the click: &lt;iframe id=&quot;aswift_3&quot; name=&quot;aswift_3&quot; style=&quot;min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;728&quot; height=&quot;90&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20251118/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=4&amp;amp;uci=a!4&amp;amp;btvi=2&quot; data-google-container-id=&quot;a!4&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;COGw2JHslJEDFZKKrAId3LIuyw&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=142.0.7444.176)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [132d07cf1359e1e908e5c6bf556964a5, clickElement {id=f.59EE1C5562FB61BB8F39427D66E74616.d.81B29FA3FB68B780A593724AE726E473.e.49}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1529}, goog:processID: 16036, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1529/devtool..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (132d07cf1359e1e908e5c6bf556964a5)] -&gt; id: submit_search]
+Session ID: 132d07cf1359e1e908e5c6bf556964a5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.BasePage.click(BasePage.java:40)
+	at pages.ProductsPage.searchProduct(ProductsPage.java:77)
+	at tests.SearchProductTest.testSearchProduct(SearchProductTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.ViewCategoryProducts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testViewCategoryProducts">
+                  </a> <!-- testViewCategoryProducts -->
+                  <span class="method-name">testViewCategoryProducts</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;#Kids&apos;]&quot;}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [46e3618f7d986d41a2b924429eeb5283, findElement {using=xpath, value=//a[@href=&apos;#Kids&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1887}, goog:processID: 14308, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1887/devtool..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 46e3618f7d986d41a2b924429eeb5283
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at pages.BasePage.findElement(BasePage.java:72)
+	at pages.HomePage.selectKidsSubCategory(HomePage.java:125)
+	at tests.ViewCategoryProducts.testViewCategoryProducts(ViewCategoryProducts.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.SignUpTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUserRegistrationFlow({lastName=, country=, year=, city=, address1=, mobileNo=, title=, zipcode=, firstName=, password=, m...)">
+                  </a> <!-- testUserRegistrationFlow({lastName=, country=, year=, city=, address1=, mobileNo=, title=, zipcode=, firstName=, password=, m...) -->
+                  <span class="method-name">testUserRegistrationFlow</span>
+                  <span class="parameters">({lastName=, country=, year=, city=, address1=, mobileNo=, title=, zipcode=, firstName=, password=, month=, company=, state=, day=, email=, username=})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected Account Information section but it is not visible expected [true] but found [false]
+	at tests.SignUpTest.testUserRegistrationFlow(SignUpTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.ProductDetailsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProductTest">
+                  </a> <!-- testProductTest -->
+                  <span class="method-name">testProductTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/product_details/1&quot; style=&quot;color: brown;&quot;&gt;...&lt;/a&gt; is not clickable at point (498, 514). Other element would receive the click: &lt;iframe id=&quot;aswift_3&quot; name=&quot;aswift_3&quot; style=&quot;min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;728&quot; height=&quot;90&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20251118/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=4&amp;amp;uci=a!4&amp;amp;btvi=2&quot; data-google-container-id=&quot;a!4&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CPPJ_IXslJEDFWnOPAId7qYAiA&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=142.0.7444.176)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cb6535ef70e5fff1e116cb12674be4d1, clickElement {id=f.A8B0D0845D3947AE6358FB2FA9666812.d.C8535B989C86CBC703C8583E4333B57A.e.54}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:13347}, goog:processID: 27808, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:13347/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (cb6535ef70e5fff1e116cb12674be4d1)] -&gt; xpath: //a[@href=&apos;/product_details/1&apos;]]
+Session ID: cb6535ef70e5fff1e116cb12674be4d1
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.BasePage.click(BasePage.java:40)
+	at pages.ProductsPage.clickViewProduct(ProductsPage.java:85)
+	at tests.ProductDetailsTest.testProductTest(ProductDetailsTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin({=, password=users15, username=users15@gmail.com})">
+                  </a> <!-- testLogin({=, password=users15, username=users15@gmail.com}) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">({=, password=users15, username=users15@gmail.com})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected user should login, but it is not  expected [true] but found [false]
+	at tests.LoginTest.testLogin(LoginTest.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.logoutUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutTest(use11@gmail.com, use11)">
+                  </a> <!-- logoutTest(use11@gmail.com, use11) -->
+                  <span class="method-name">logoutTest</span>
+                  <span class="parameters">(use11@gmail.com,use11)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -282,6 +524,149 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">tests.PlaceOrderRegisterWhileCheckout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPlaceOrderRegisterWhileCheckout({lastName=Doe, country=India, cardName=visa, productId=1, year=1990, city=Kottayam, address1=123 Mai...)">
+                  </a> <!-- testPlaceOrderRegisterWhileCheckout({lastName=Doe, country=India, cardName=visa, productId=1, year=1990, city=Kottayam, address1=123 Mai...) -->
+                  <span class="method-name">testPlaceOrderRegisterWhileCheckout</span>
+                  <span class="parameters">({lastName=Doe, country=India, cardName=visa, productId=1, year=1990, city=Kottayam, address1=123 Main St, expyear=2030, mobileNo=1234567890, title=Mr, cardNo=123345, zipcode=686008, firstName=John, cvc=566, password=Pass@123, month=May, expmonth=April, company=ABC Corp, state=Kerala, day=10, email=userss201@test.com, username=user1})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SignUpTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUserRegistrationFlow({lastName=Doe, country=India, year=2003, city=Kochi, address1=Addr1Line1, mobileNo=9999911111, title...)">
+                  </a> <!-- testUserRegistrationFlow({lastName=Doe, country=India, year=2003, city=Kochi, address1=Addr1Line1, mobileNo=9999911111, title...) -->
+                  <span class="method-name">testUserRegistrationFlow</span>
+                  <span class="parameters">({lastName=Doe, country=India, year=2003, city=Kochi, address1=Addr1Line1, mobileNo=9999911111, title=Mr, zipcode=682001, firstName=John, password=pass@123, month=July, company=TestCompany, state=Kerala, day=3, email=users011@gmail.com, username=users011})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUserRegistrationFlow({lastName=Smith, country=India, year=1999, city=New Delhi, address1=Addr1Line2, mobileNo=8888822222,...)">
+                  </a> <!-- testUserRegistrationFlow({lastName=Smith, country=India, year=1999, city=New Delhi, address1=Addr1Line2, mobileNo=8888822222,...) -->
+                  <span class="method-name">testUserRegistrationFlow</span>
+                  <span class="parameters">({lastName=Smith, country=India, year=1999, city=New Delhi, address1=Addr1Line2, mobileNo=8888822222, title=Mrs, zipcode=110001, firstName=Alice, password=pass@456, month=May, company=CompanyX, state=Delhi, day=10, email=users012@gmail.com, username=users012})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ContactUsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testContactUs(Anu, anu@gmail.com, Regarding Service, Packing should be improved, C:\Users\HP\OneDrive\Documents\ms...)">
+                  </a> <!-- testContactUs(Anu, anu@gmail.com, Regarding Service, Packing should be improved, C:\Users\HP\OneDrive\Documents\ms...) -->
+                  <span class="method-name">testContactUs</span>
+                  <span class="parameters">(Anu,anu@gmail.com,Regarding Service,Packing should be improved,C:\Users\HP\OneDrive\Documents\msg.docx)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testContactUs(Meera, meera@hotmail.com, Delivery Delay, Delivery was delayed by 3 days, )">
+                  </a> <!-- testContactUs(Meera, meera@hotmail.com, Delivery Delay, Delivery was delayed by 3 days, ) -->
+                  <span class="method-name">testContactUs</span>
+                  <span class="parameters">(Meera,meera@hotmail.com,Delivery Delay,Delivery was delayed by 3 days,)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testContactUs(Ravi, ravi@yahoo.com, Payment Issue, Payment gateway failed, )">
+                  </a> <!-- testContactUs(Ravi, ravi@yahoo.com, Payment Issue, Payment gateway failed, ) -->
+                  <span class="method-name">testContactUs</span>
+                  <span class="parameters">(Ravi,ravi@yahoo.com,Payment Issue,Payment gateway failed,)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SubscriptionInCartPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubscriptionInCartPageTest">
+                  </a> <!-- testSubscriptionInCartPageTest -->
+                  <span class="method-name">testSubscriptionInCartPageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SignuptestExistingMail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithExistingMail(users9, users9@gmail.com)">
+                  </a> <!-- testWithExistingMail(users9, users9@gmail.com) -->
+                  <span class="method-name">testWithExistingMail</span>
+                  <span class="parameters">(users9,users9@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.AddProductsInCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddProductsInCart(1, 2)">
+                  </a> <!-- testAddProductsInCart(1, 2) -->
+                  <span class="method-name">testAddProductsInCart</span>
+                  <span class="parameters">(1,2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddProductsInCart(3, 4)">
+                  </a> <!-- testAddProductsInCart(3, 4) -->
+                  <span class="method-name">testAddProductsInCart</span>
+                  <span class="parameters">(3,4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.RemoveProductsFromCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveProductsFromCart(1)">
+                  </a> <!-- testRemoveProductsFromCart(1) -->
+                  <span class="method-name">testRemoveProductsFromCart</span>
+                  <span class="parameters">(1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">tests.LoginwithInvalidCredantials</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -298,70 +683,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.SignUpTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testUserRegistrationFlow({lastName=Doe, country=India, year=2003, city=Kochi, address1=Addr1Line1, mobileNo=9999911111, title...)">
-                  </a> <!-- testUserRegistrationFlow({lastName=Doe, country=India, year=2003, city=Kochi, address1=Addr1Line1, mobileNo=9999911111, title...) -->
-                  <span class="method-name">testUserRegistrationFlow</span>
-                  <span class="parameters">({lastName=Doe, country=India, year=2003, city=Kochi, address1=Addr1Line1, mobileNo=9999911111, title=Mr, zipcode=682001, firstName=John, password=pass@123, month=July, company=TestCompany, state=Kerala, day=3, email=users001@gmail.com, username=users001})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testUserRegistrationFlow({lastName=Smith, country=India, year=1999, city=New Delhi, address1=Addr1Line2, mobileNo=8888822222,...)">
-                  </a> <!-- testUserRegistrationFlow({lastName=Smith, country=India, year=1999, city=New Delhi, address1=Addr1Line2, mobileNo=8888822222,...) -->
-                  <span class="method-name">testUserRegistrationFlow</span>
-                  <span class="parameters">({lastName=Smith, country=India, year=1999, city=New Delhi, address1=Addr1Line2, mobileNo=8888822222, title=Mrs, zipcode=110001, firstName=Alice, password=pass@456, month=May, company=CompanyX, state=Delhi, day=10, email=users002@gmail.com, username=users002})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testUserRegistrationFlow({lastName=Johnson, country=India, year=2001, city=Bangalore, address1=Addr1Line3, mobileNo=777773333...)">
-                  </a> <!-- testUserRegistrationFlow({lastName=Johnson, country=India, year=2001, city=Bangalore, address1=Addr1Line3, mobileNo=777773333...) -->
-                  <span class="method-name">testUserRegistrationFlow</span>
-                  <span class="parameters">({lastName=Johnson, country=India, year=2001, city=Bangalore, address1=Addr1Line3, mobileNo=7777733333, title=Mr, zipcode=560001, firstName=Bob, password=pass@789, month=December, company=TechCorp, state=Karnataka, day=15, email=users003@gmail.com, username=users003})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.ProductDetailsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testProductTest">
-                  </a> <!-- testProductTest -->
-                  <span class="method-name">testProductTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLogin({=, password=users7@123, username=users7@gmail.com})">
-                  </a> <!-- testLogin({=, password=users7@123, username=users7@gmail.com}) -->
+                  <a name="testLogin({=, password=users16, username=users16@gmail.com})">
+                  </a> <!-- testLogin({=, password=users16, username=users16@gmail.com}) -->
                   <span class="method-name">testLogin</span>
-                  <span class="parameters">({=, password=users7@123, username=users7@gmail.com})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLogin({=, password=users10@123, username=users10@gmail.com})">
-                  </a> <!-- testLogin({=, password=users10@123, username=users10@gmail.com}) -->
-                  <span class="method-name">testLogin</span>
-                  <span class="parameters">({=, password=users10@123, username=users10@gmail.com})</span>
+                  <span class="parameters">({=, password=users16, username=users16@gmail.com})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -369,31 +699,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.ContactUsTest</span>
+              <span class="class-name">tests.PlaceOrderRegisterBeforeCheckout</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testContactUs(Ravi, ravi@yahoo.com, Payment Issue, Payment gateway failed, )">
-                  </a> <!-- testContactUs(Ravi, ravi@yahoo.com, Payment Issue, Payment gateway failed, ) -->
-                  <span class="method-name">testContactUs</span>
-                  <span class="parameters">(Ravi,ravi@yahoo.com,Payment Issue,Payment gateway failed,)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testContactUs(Meera, meera@hotmail.com, Delivery Delay, Delivery was delayed by 3 days, )">
-                  </a> <!-- testContactUs(Meera, meera@hotmail.com, Delivery Delay, Delivery was delayed by 3 days, ) -->
-                  <span class="method-name">testContactUs</span>
-                  <span class="parameters">(Meera,meera@hotmail.com,Delivery Delay,Delivery was delayed by 3 days,)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testContactUs(Anu, anu@gmail.com, Regarding Service, Packing should be improved, C:\Users\HP\OneDrive\Documents\ms...)">
-                  </a> <!-- testContactUs(Anu, anu@gmail.com, Regarding Service, Packing should be improved, C:\Users\HP\OneDrive\Documents\ms...) -->
-                  <span class="method-name">testContactUs</span>
-                  <span class="parameters">(Anu,anu@gmail.com,Regarding Service,Packing should be improved,C:\Users\HP\OneDrive\Documents\msg.docx)</span>
+                  <a name="testPlaceOrderRegisterBeforeCheckout({lastName=Doe, country=India, cardName=visa, productId=1, year=1990, city=Kottayam, address1=123 Mai...)">
+                  </a> <!-- testPlaceOrderRegisterBeforeCheckout({lastName=Doe, country=India, cardName=visa, productId=1, year=1990, city=Kottayam, address1=123 Mai...) -->
+                  <span class="method-name">testPlaceOrderRegisterBeforeCheckout</span>
+                  <span class="parameters">({lastName=Doe, country=India, cardName=visa, productId=1, year=1990, city=Kottayam, address1=123 Main St, expyear=2030, mobileNo=1234567890, title=Mr, cardNo=123345, zipcode=686008, firstName=John, cvc=566, password=Pass@123, month=May, expmonth=April, company=ABC Corp, state=Kerala, day=10, email=userss201@test.com, username=user1})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -409,10 +723,11 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;loginmail&quot; value=&quot;users2@gmail.com&quot;/&gt;
-  &lt;parameter name=&quot;logoutMail&quot; value=&quot;users9@gmail.com&quot;/&gt;
+  &lt;parameter name=&quot;prdId&quot; value=&quot;1&quot;/&gt;
+  &lt;parameter name=&quot;logoutMail&quot; value=&quot;use11@gmail.com&quot;/&gt;
   &lt;parameter name=&quot;mail&quot; value=&quot;users9@gmail.com&quot;/&gt;
   &lt;parameter name=&quot;loginpassword&quot; value=&quot;usersname2&quot;/&gt;
-  &lt;parameter name=&quot;logoutPassword&quot; value=&quot;users9@123&quot;/&gt;
+  &lt;parameter name=&quot;logoutPassword&quot; value=&quot;use11&quot;/&gt;
   &lt;parameter name=&quot;username&quot; value=&quot;users9&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;listeners.TestListeners&quot;/&gt;
@@ -431,6 +746,13 @@
       &lt;class name=&quot;tests.ProductDetailsTest&quot;/&gt;
       &lt;class name=&quot;tests.SearchProductTest&quot;/&gt;
       &lt;class name=&quot;tests.SubscriptionTest&quot;/&gt;
+      &lt;class name=&quot;tests.SubscriptionInCartPageTest&quot;/&gt;
+      &lt;class name=&quot;tests.AddProductsInCart&quot;/&gt;
+      &lt;class name=&quot;tests.VerifyProductQuantityInCart&quot;/&gt;
+      &lt;class name=&quot;tests.PlaceOrderRegisterWhileCheckout&quot;/&gt;
+      &lt;class name=&quot;tests.PlaceOrderRegisterBeforeCheckout&quot;/&gt;
+      &lt;class name=&quot;tests.RemoveProductsFromCart&quot;/&gt;
+      &lt;class name=&quot;tests.ViewCategoryProducts&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -444,7 +766,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (10 classes)</span>
+                <span class="test-name">Test (17 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -470,76 +792,108 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(16);
+data.addRows(24);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testUserRegistrationFlow')
-data.setCell(0, 2, 'tests.SignUpTest')
-data.setCell(0, 3, 13114);
+data.setCell(0, 1, 'testPlaceOrderRegisterBeforeCheckout')
+data.setCell(0, 2, 'tests.PlaceOrderRegisterBeforeCheckout')
+data.setCell(0, 3, 43616);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testUserRegistrationFlow')
-data.setCell(1, 2, 'tests.SignUpTest')
-data.setCell(1, 3, 12516);
+data.setCell(1, 1, 'testPlaceOrderRegisterWhileCheckout')
+data.setCell(1, 2, 'tests.PlaceOrderRegisterWhileCheckout')
+data.setCell(1, 3, 31151);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testUserRegistrationFlow')
 data.setCell(2, 2, 'tests.SignUpTest')
-data.setCell(2, 3, 11758);
+data.setCell(2, 3, 18404);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testLogin')
-data.setCell(3, 2, 'tests.LoginTest')
-data.setCell(3, 3, 9635);
+data.setCell(3, 1, 'testUserRegistrationFlow')
+data.setCell(3, 2, 'tests.SignUpTest')
+data.setCell(3, 3, 15556);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testContactUs')
-data.setCell(4, 2, 'tests.ContactUsTest')
-data.setCell(4, 3, 9018);
+data.setCell(4, 1, 'testUserRegistrationFlow')
+data.setCell(4, 2, 'tests.SignUpTest')
+data.setCell(4, 3, 12519);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testContactUs')
-data.setCell(5, 2, 'tests.ContactUsTest')
-data.setCell(5, 3, 6291);
+data.setCell(5, 1, 'testLogin')
+data.setCell(5, 2, 'tests.LoginTest')
+data.setCell(5, 3, 12207);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testLogin')
-data.setCell(6, 2, 'tests.LoginTest')
-data.setCell(6, 3, 5780);
+data.setCell(6, 1, 'testViewCategoryProducts')
+data.setCell(6, 2, 'tests.ViewCategoryProducts')
+data.setCell(6, 3, 11817);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testSearchProduct')
-data.setCell(7, 2, 'tests.SearchProductTest')
-data.setCell(7, 3, 4833);
+data.setCell(7, 1, 'testContactUs')
+data.setCell(7, 2, 'tests.ContactUsTest')
+data.setCell(7, 3, 10739);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'logoutTest')
-data.setCell(8, 2, 'tests.logoutUserTest')
-data.setCell(8, 3, 4638);
+data.setCell(8, 1, 'testLogin')
+data.setCell(8, 2, 'tests.LoginTest')
+data.setCell(8, 3, 9367);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testProductTest')
-data.setCell(9, 2, 'tests.ProductDetailsTest')
-data.setCell(9, 3, 4544);
+data.setCell(9, 1, 'testContactUs')
+data.setCell(9, 2, 'tests.ContactUsTest')
+data.setCell(9, 3, 9031);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testSearchProduct')
-data.setCell(10, 2, 'tests.SearchProductTest')
-data.setCell(10, 3, 4508);
+data.setCell(10, 1, 'logoutTest')
+data.setCell(10, 2, 'tests.logoutUserTest')
+data.setCell(10, 3, 8185);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testContactUs')
-data.setCell(11, 2, 'tests.ContactUsTest')
-data.setCell(11, 3, 3881);
+data.setCell(11, 1, 'testRemoveProductsFromCart')
+data.setCell(11, 2, 'tests.RemoveProductsFromCart')
+data.setCell(11, 3, 7929);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testTestCases')
-data.setCell(12, 2, 'tests.TestCasesTest')
-data.setCell(12, 3, 2708);
+data.setCell(12, 1, 'testAddProductsInCart')
+data.setCell(12, 2, 'tests.AddProductsInCart')
+data.setCell(12, 3, 7627);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testWithExistingMail')
-data.setCell(13, 2, 'tests.SignuptestExistingMail')
-data.setCell(13, 3, 2219);
+data.setCell(13, 1, 'testAddProductsInCart')
+data.setCell(13, 2, 'tests.AddProductsInCart')
+data.setCell(13, 3, 7103);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'testLoginWithInvalidData')
-data.setCell(14, 2, 'tests.LoginwithInvalidCredantials')
-data.setCell(14, 3, 2177);
+data.setCell(14, 1, 'testContactUs')
+data.setCell(14, 2, 'tests.ContactUsTest')
+data.setCell(14, 3, 7057);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'testSubscription')
-data.setCell(15, 2, 'tests.SubscriptionTest')
-data.setCell(15, 3, 521);
+data.setCell(15, 1, 'testSearchProduct')
+data.setCell(15, 2, 'tests.SearchProductTest')
+data.setCell(15, 3, 6532);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testSearchProduct')
+data.setCell(16, 2, 'tests.SearchProductTest')
+data.setCell(16, 3, 5529);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testWithExistingMail')
+data.setCell(17, 2, 'tests.SignuptestExistingMail')
+data.setCell(17, 3, 4773);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testProductTest')
+data.setCell(18, 2, 'tests.ProductDetailsTest')
+data.setCell(18, 3, 3914);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testVerifyProductQuantityInCart')
+data.setCell(19, 2, 'tests.VerifyProductQuantityInCart')
+data.setCell(19, 3, 3534);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testLoginWithInvalidData')
+data.setCell(20, 2, 'tests.LoginwithInvalidCredantials')
+data.setCell(20, 3, 2979);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testTestCases')
+data.setCell(21, 2, 'tests.TestCasesTest')
+data.setCell(21, 3, 2110);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testSubscriptionInCartPageTest')
+data.setCell(22, 2, 'tests.SubscriptionInCartPageTest')
+data.setCell(22, 3, 1775);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testSubscription')
+data.setCell(23, 2, 'tests.SubscriptionTest')
+data.setCell(23, 3, 463);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -572,218 +926,349 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testUserRegistrationFlow({lastName=Doe, country=India, year=2003, city=Kochi, address1=Addr1Line1, mobileNo=9999911111, title...)</span>
-                <span class="method-start">8825 ms</span>
+                <span class="method-start">10848 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21357 ms</span>
+                <span class="method-start">29277 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Windows, chrome)</span>
-                <span class="method-start">21864 ms</span>
+                <span class="method-start">29968 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testUserRegistrationFlow({lastName=Smith, country=India, year=1999, city=New Delhi, address1=Addr1Line2, mobileNo=8888822222,...)</span>
-                <span class="method-start">25021 ms</span>
+                <span class="method-start">36108 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36783 ms</span>
+                <span class="method-start">51670 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Windows, chrome)</span>
-                <span class="method-start">37239 ms</span>
+                <span class="method-start">52371 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testUserRegistrationFlow({lastName=Johnson, country=India, year=2001, city=Bangalore, address1=Addr1Line3, mobileNo=777773333...)</span>
-                <span class="method-start">40378 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testUserRegistrationFlow({lastName=, country=, year=, city=, address1=, mobileNo=, title=, zipcode=, firstName=, password=, m...)</span>
+                <span class="method-start">56671 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">53495 ms</span>
+                <span class="method-start">69481 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Windows, chrome)</span>
-                <span class="method-start">54245 ms</span>
+                <span class="method-start">70128 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testLogin({=, password=users7@123, username=users7@gmail.com})</span>
-                <span class="method-start">57416 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin({=, password=users15, username=users15@gmail.com})</span>
+                <span class="method-start">78735 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">63200 ms</span>
+                <span class="method-start">91187 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Windows, chrome)</span>
-                <span class="method-start">63496 ms</span>
+                <span class="method-start">91748 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testLogin({=, password=users10@123, username=users10@gmail.com})</span>
-                <span class="method-start">66094 ms</span>
+                <span class="method-name">testLogin({=, password=users16, username=users16@gmail.com})</span>
+                <span class="method-start">96692 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">75730 ms</span>
+                <span class="method-start">106063 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LoginwithInvalidCredantials</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Windows, chrome)</span>
-                <span class="method-start">75993 ms</span>
+                <span class="method-start">106425 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithInvalidData(users2@gmail.com, usersname2)</span>
-                <span class="method-start">79006 ms</span>
+                <span class="method-start">112121 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">81185 ms</span>
+                <span class="method-start">115101 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.logoutUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Windows, chrome)</span>
-                <span class="method-start">81514 ms</span>
+                <span class="method-start">115367 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">logoutTest(users9@gmail.com, users9@123)</span>
-                <span class="method-start">85009 ms</span>
+                <span class="method-name">logoutTest(use11@gmail.com, use11)</span>
+                <span class="method-start">121011 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">89649 ms</span>
+                <span class="method-start">129199 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.SignuptestExistingMail</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Windows, chrome)</span>
-                <span class="method-start">89898 ms</span>
+                <span class="method-start">129609 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testWithExistingMail(users9, users9@gmail.com)</span>
-                <span class="method-start">92395 ms</span>
+                <span class="method-start">133273 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">94614 ms</span>
+                <span class="method-start">138047 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.ContactUsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Windows, chrome)</span>
-                <span class="method-start">94902 ms</span>
+                <span class="method-start">138286 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testContactUs(Anu, anu@gmail.com, Regarding Service, Packing should be improved, C:\Users\HP\OneDrive\Documents\ms...)</span>
-                <span class="method-start">97881 ms</span>
+                <span class="method-start">143700 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">106900 ms</span>
+                <span class="method-start">154440 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Windows, chrome)</span>
-                <span class="method-start">107459 ms</span>
+                <span class="method-start">155057 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testContactUs(Ravi, ravi@yahoo.com, Payment Issue, Payment gateway failed, )</span>
-                <span class="method-start">131255 ms</span>
+                <span class="method-start">159997 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">137547 ms</span>
+                <span class="method-start">169031 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Windows, chrome)</span>
-                <span class="method-start">137797 ms</span>
+                <span class="method-start">171099 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testContactUs(Meera, meera@hotmail.com, Delivery Delay, Delivery was delayed by 3 days, )</span>
-                <span class="method-start">140906 ms</span>
+                <span class="method-start">177341 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">144788 ms</span>
+                <span class="method-start">184401 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TestCasesTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Windows, chrome)</span>
-                <span class="method-start">145049 ms</span>
+                <span class="method-start">184791 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTestCases</span>
-                <span class="method-start">146670 ms</span>
+                <span class="method-start">192787 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">149379 ms</span>
+                <span class="method-start">194899 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.ProductDetailsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Windows, chrome)</span>
-                <span class="method-start">149705 ms</span>
+                <span class="method-start">195266 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testProductTest</span>
-                <span class="method-start">153406 ms</span>
+                <span class="method-start">201137 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">157952 ms</span>
+                <span class="method-start">205308 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.SearchProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Windows, chrome)</span>
-                <span class="method-start">158199 ms</span>
+                <span class="method-start">205566 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testSearchProduct(Jeans)</span>
-                <span class="method-start">161043 ms</span>
+                <span class="method-start">210574 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">165551 ms</span>
+                <span class="method-start">217336 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Windows, chrome)</span>
-                <span class="method-start">165868 ms</span>
+                <span class="method-start">217700 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testSearchProduct(Cotton)</span>
-                <span class="method-start">168588 ms</span>
+                <span class="method-start">224952 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">173423 ms</span>
+                <span class="method-start">230705 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.SubscriptionTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Windows, chrome)</span>
-                <span class="method-start">173731 ms</span>
+                <span class="method-start">231103 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSubscription</span>
-                <span class="method-start">176591 ms</span>
+                <span class="method-start">236786 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">177113 ms</span>
+                <span class="method-start">237251 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SubscriptionInCartPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Windows, chrome)</span>
+                <span class="method-start">237489 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSubscriptionInCartPageTest</span>
+                <span class="method-start">244219 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">245995 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AddProductsInCart</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Windows, chrome)</span>
+                <span class="method-start">246250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddProductsInCart(1, 2)</span>
+                <span class="method-start">251930 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">259035 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Windows, chrome)</span>
+                <span class="method-start">259432 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddProductsInCart(3, 4)</span>
+                <span class="method-start">266017 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">273646 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.VerifyProductQuantityInCart</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Windows, chrome)</span>
+                <span class="method-start">274081 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testVerifyProductQuantityInCart</span>
+                <span class="method-start">279075 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">282868 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.PlaceOrderRegisterWhileCheckout</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Windows, chrome)</span>
+                <span class="method-start">283314 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPlaceOrderRegisterWhileCheckout({lastName=Doe, country=India, cardName=visa, productId=1, year=1990, city=Kottayam, address1=123 Mai...)</span>
+                <span class="method-start">288905 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">320058 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.PlaceOrderRegisterBeforeCheckout</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Windows, chrome)</span>
+                <span class="method-start">320762 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPlaceOrderRegisterBeforeCheckout({lastName=Doe, country=India, cardName=visa, productId=1, year=1990, city=Kottayam, address1=123 Mai...)</span>
+                <span class="method-start">326383 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">370001 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RemoveProductsFromCart</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Windows, chrome)</span>
+                <span class="method-start">370666 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRemoveProductsFromCart(1)</span>
+                <span class="method-start">377734 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">385664 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ViewCategoryProducts</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Windows, chrome)</span>
+                <span class="method-start">386070 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testViewCategoryProducts</span>
+                <span class="method-start">391465 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">403414 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

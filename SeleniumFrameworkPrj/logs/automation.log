@@ -1,133 +1,186 @@
-2025-09-14 17:14:58 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2025-09-14 17:14:58 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-2025-09-14 17:14:58 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2025-09-14 17:15:08 INFO  BaseTest:28 - ------- TESTCASE 1 : REGISTER USER ----------
-2025-09-14 17:15:08 INFO  BaseTest:35 - Home Page is displayed successfully
-2025-09-14 17:15:09 INFO  BaseTest:39 - Navigated to Signup/Login page
-2025-09-14 17:15:09 INFO  BaseTest:44 - Signup section is visible
-2025-09-14 17:15:10 INFO  BaseTest:50 - Performed signup with username: users001 and email: users001@gmail.com
-2025-09-14 17:15:10 INFO  BaseTest:55 - Account Information section is visible
-2025-09-14 17:15:15 INFO  BaseTest:75 - Filled all account details and submitted the form
-2025-09-14 17:15:15 INFO  BaseTest:80 - Account has been created successfully
-2025-09-14 17:15:18 INFO  BaseTest:86 - User logged in successfully:Logged in as users001
-2025-09-14 17:15:19 INFO  BaseTest:90 - Clicked on Delete Account button
-2025-09-14 17:15:19 INFO  BaseTest:95 - Account has been deleted successfully
-2025-09-14 17:15:24 INFO  BaseTest:28 - ------- TESTCASE 1 : REGISTER USER ----------
-2025-09-14 17:15:24 INFO  BaseTest:35 - Home Page is displayed successfully
-2025-09-14 17:15:25 INFO  BaseTest:39 - Navigated to Signup/Login page
-2025-09-14 17:15:25 INFO  BaseTest:44 - Signup section is visible
-2025-09-14 17:15:26 INFO  BaseTest:50 - Performed signup with username: users002 and email: users002@gmail.com
-2025-09-14 17:15:27 INFO  BaseTest:55 - Account Information section is visible
-2025-09-14 17:15:31 INFO  BaseTest:75 - Filled all account details and submitted the form
-2025-09-14 17:15:31 INFO  BaseTest:80 - Account has been created successfully
-2025-09-14 17:15:33 INFO  BaseTest:86 - User logged in successfully:Logged in as users002
-2025-09-14 17:15:34 INFO  BaseTest:90 - Clicked on Delete Account button
-2025-09-14 17:15:34 INFO  BaseTest:95 - Account has been deleted successfully
-2025-09-14 17:15:40 INFO  BaseTest:28 - ------- TESTCASE 1 : REGISTER USER ----------
-2025-09-14 17:15:40 INFO  BaseTest:35 - Home Page is displayed successfully
-2025-09-14 17:15:40 INFO  BaseTest:39 - Navigated to Signup/Login page
-2025-09-14 17:15:41 INFO  BaseTest:44 - Signup section is visible
-2025-09-14 17:15:42 INFO  BaseTest:50 - Performed signup with username: users003 and email: users003@gmail.com
-2025-09-14 17:15:42 INFO  BaseTest:55 - Account Information section is visible
-2025-09-14 17:15:47 INFO  BaseTest:75 - Filled all account details and submitted the form
-2025-09-14 17:15:47 INFO  BaseTest:80 - Account has been created successfully
-2025-09-14 17:15:50 INFO  BaseTest:86 - User logged in successfully:Logged in as users003
-2025-09-14 17:15:51 INFO  BaseTest:90 - Clicked on Delete Account button
-2025-09-14 17:15:51 INFO  BaseTest:95 - Account has been deleted successfully
-2025-09-14 17:15:53 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2025-09-14 17:15:53 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-2025-09-14 17:15:53 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2025-09-14 17:15:57 INFO  BaseTest:37 - ------- TESTCASE 2 : LOGIN USER WITH  CORRECT EMAIL AND  PASSWORD ----------
-2025-09-14 17:15:57 INFO  BaseTest:42 - Home Page is displayed successfully
-2025-09-14 17:15:57 INFO  BaseTest:46 - Navigated to Signup/Login page
-2025-09-14 17:15:58 INFO  BaseTest:52 - Login section is visible
-2025-09-14 17:15:58 INFO  BaseTest:59 - fill details and clicked on login button
-2025-09-14 17:16:00 INFO  BaseTest:65 - User logged in successfully: Logged in as users7
-2025-09-14 17:16:01 INFO  BaseTest:69 - Clicked on Delete Account button
-2025-09-14 17:16:01 INFO  BaseTest:73 - Account has been deleted successfully
-2025-09-14 17:16:05 INFO  BaseTest:37 - ------- TESTCASE 2 : LOGIN USER WITH  CORRECT EMAIL AND  PASSWORD ----------
-2025-09-14 17:16:05 INFO  BaseTest:42 - Home Page is displayed successfully
-2025-09-14 17:16:06 INFO  BaseTest:46 - Navigated to Signup/Login page
-2025-09-14 17:16:06 INFO  BaseTest:52 - Login section is visible
-2025-09-14 17:16:12 INFO  BaseTest:59 - fill details and clicked on login button
-2025-09-14 17:16:12 INFO  BaseTest:65 - User logged in successfully: Logged in as users10
-2025-09-14 17:16:13 INFO  BaseTest:69 - Clicked on Delete Account button
-2025-09-14 17:16:13 INFO  BaseTest:73 - Account has been deleted successfully
-2025-09-14 17:16:18 INFO  BaseTest:22 - ------- TESTCASE 3 : LOGIN USER WITH  INCORRECT EMAIL AND  PASSWORD ----------
-2025-09-14 17:16:18 INFO  BaseTest:27 - Home Page is displayed successfully
-2025-09-14 17:16:19 INFO  BaseTest:31 - Navigated to Signup/Login page
-2025-09-14 17:16:19 INFO  BaseTest:37 - Login section is visible
-2025-09-14 17:16:20 INFO  BaseTest:44 - fill details and clicked on login button
-2025-09-14 17:16:24 INFO  BaseTest:24 - ------- TESTCASE 4 : LOGOUT USER  ----------
-2025-09-14 17:16:24 INFO  BaseTest:28 - Home Page is displayed successfully
-2025-09-14 17:16:25 INFO  BaseTest:30 - Navigated to Signup/Login page
-2025-09-14 17:16:25 INFO  BaseTest:35 - Login Page is displayed successfully
-2025-09-14 17:16:26 INFO  BaseTest:39 - Entered credentials and clicked Login button
-2025-09-14 17:16:28 INFO  BaseTest:45 - User logged in successfully as: Logged in as users9
-2025-09-14 17:16:29 INFO  BaseTest:47 - User clicked Logout button
-2025-09-14 17:16:29 INFO  BaseTest:51 - Successfully navigated back to Login Page after logout
-2025-09-14 17:16:32 INFO  BaseTest:18 - ------- TESTCASE 5 : REGISTER USER with Existing mail ----------
-2025-09-14 17:16:32 INFO  BaseTest:25 - Home Page is displayed successfully
-2025-09-14 17:16:33 INFO  BaseTest:29 - Navigated to Signup/Login page
-2025-09-14 17:16:33 INFO  BaseTest:34 - Signup section is visible
-2025-09-14 17:16:34 INFO  BaseTest:41 - Performed signup with username: users9 and email: users9@gmail.com
-2025-09-14 17:16:37 INFO  BaseTest:19 - ------- TESTCASE 6 : CONTACT US FORM ----------
-2025-09-14 17:16:37 INFO  BaseTest:24 - Home Page is displayed successfully
-2025-09-14 17:16:42 INFO  BaseTest:27 - Navigated to Contact Us page
-2025-09-14 17:16:42 INFO  BaseTest:32 - Contact Us Page is displayed successfully
-2025-09-14 17:16:43 INFO  BaseTest:45 - Entered contact details in the form
-2025-09-14 17:16:43 INFO  BaseTest:49 - Submitted the form and handled alert
-2025-09-14 17:16:43 INFO  BaseTest:53 - Contact form submitted successfully
-2025-09-14 17:16:46 INFO  BaseTest:58 - Successfully navigated back to Home Page
-2025-09-14 17:17:10 INFO  BaseTest:19 - ------- TESTCASE 6 : CONTACT US FORM ----------
-2025-09-14 17:17:11 INFO  BaseTest:24 - Home Page is displayed successfully
-2025-09-14 17:17:13 INFO  BaseTest:27 - Navigated to Contact Us page
-2025-09-14 17:17:13 INFO  BaseTest:32 - Contact Us Page is displayed successfully
-2025-09-14 17:17:14 INFO  BaseTest:45 - Entered contact details in the form
-2025-09-14 17:17:14 INFO  BaseTest:49 - Submitted the form and handled alert
-2025-09-14 17:17:14 INFO  BaseTest:53 - Contact form submitted successfully
-2025-09-14 17:17:17 INFO  BaseTest:58 - Successfully navigated back to Home Page
-2025-09-14 17:17:20 INFO  BaseTest:19 - ------- TESTCASE 6 : CONTACT US FORM ----------
-2025-09-14 17:17:20 INFO  BaseTest:24 - Home Page is displayed successfully
-2025-09-14 17:17:21 INFO  BaseTest:27 - Navigated to Contact Us page
-2025-09-14 17:17:21 INFO  BaseTest:32 - Contact Us Page is displayed successfully
-2025-09-14 17:17:22 INFO  BaseTest:45 - Entered contact details in the form
-2025-09-14 17:17:22 INFO  BaseTest:49 - Submitted the form and handled alert
-2025-09-14 17:17:23 INFO  BaseTest:53 - Contact form submitted successfully
-2025-09-14 17:17:24 INFO  BaseTest:58 - Successfully navigated back to Home Page
-2025-09-14 17:17:26 INFO  BaseTest:19 - ------- TESTCASE 7 : VERIFY TESTCASE PAGE ----------
-2025-09-14 17:17:27 INFO  BaseTest:24 - Home Page is displayed successfully
-2025-09-14 17:17:28 INFO  BaseTest:27 - Navigated to Test Case page
-2025-09-14 17:17:29 INFO  BaseTest:32 - Test Case Page is displayed successfully
-2025-09-14 17:17:33 INFO  BaseTest:21 - ------- TESTCASE 8 : VERIFY ALL PRODUCTS AND PRODUCT DETAIL PAGE ----------
-2025-09-14 17:17:33 INFO  BaseTest:28 - Home Page is displayed successfully
-2025-09-14 17:17:35 INFO  BaseTest:34 - Clicked on 'Products' menu
-2025-09-14 17:17:35 INFO  BaseTest:40 - Products Page is visible successfully
-2025-09-14 17:17:35 INFO  BaseTest:47 - Product list is displayed successfully
-2025-09-14 17:17:37 INFO  BaseTest:51 - Clicked on 'View Product' for a product
-2025-09-14 17:17:37 INFO  BaseTest:55 - Product Details Page is visible successfully
-2025-09-14 17:17:37 INFO  BaseTest:59 - Product name is visible
-2025-09-14 17:17:37 INFO  BaseTest:62 - Product category is visible
-2025-09-14 17:17:37 INFO  BaseTest:65 - Product cost is visible
-2025-09-14 17:17:37 INFO  BaseTest:68 - Product availability is visible
-2025-09-14 17:17:37 INFO  BaseTest:71 - Product condition is visible
-2025-09-14 17:17:37 INFO  BaseTest:74 - Product brand is visible
-2025-09-14 17:17:40 INFO  BaseTest:19 - ------- TESTCASE 9 : SEARCH PRODUCT PAGE ----------
-2025-09-14 17:17:40 INFO  BaseTest:26 - Home Page is displayed successfully
-2025-09-14 17:17:43 INFO  BaseTest:31 - Clicked on 'Products' menu
-2025-09-14 17:17:43 INFO  BaseTest:37 - Products Page is visible successfully
-2025-09-14 17:17:45 INFO  BaseTest:46 - Search results are visible
-2025-09-14 17:17:45 INFO  BaseTest:49 - Products are visible after search
-2025-09-14 17:17:45 INFO  BaseTest:58 - Product related to search are visible
-2025-09-14 17:17:48 INFO  BaseTest:19 - ------- TESTCASE 9 : SEARCH PRODUCT PAGE ----------
-2025-09-14 17:17:48 INFO  BaseTest:26 - Home Page is displayed successfully
-2025-09-14 17:17:50 INFO  BaseTest:31 - Clicked on 'Products' menu
-2025-09-14 17:17:50 INFO  BaseTest:37 - Products Page is visible successfully
-2025-09-14 17:17:52 INFO  BaseTest:46 - Search results are visible
-2025-09-14 17:17:53 INFO  BaseTest:49 - Products are visible after search
-2025-09-14 17:17:53 INFO  BaseTest:58 - Product related to search are visible
-2025-09-14 17:17:56 INFO  BaseTest:17 - ------- TESTCASE 10 : VERIFY SUBSCRIPTION IN HOME PAGE ----------
-2025-09-14 17:17:56 INFO  BaseTest:22 - Home Page is displayed successfully
-2025-09-14 17:17:56 INFO  BaseTest:27 - Entered subscription email: usersname3@gmail.com
-2025-09-14 17:17:56 INFO  BaseTest:31 - Clicked on 'Subscribe' button
-2025-09-14 17:17:56 INFO  BaseTest:35 - Subscription success message displayed successfully for email: usersname3@gmail.com
+2025-11-28 19:04:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-11-28 19:04:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-11-28 19:04:24 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-11-28 19:04:34 INFO  BaseTest:28 - ------- TESTCASE 1 : REGISTER USER ----------
+2025-11-28 19:04:34 INFO  BaseTest:35 - Home Page is displayed successfully
+2025-11-28 19:04:36 INFO  BaseTest:39 - Navigated to Signup/Login page
+2025-11-28 19:04:36 INFO  BaseTest:44 - Signup section is visible
+2025-11-28 19:04:38 INFO  BaseTest:50 - Performed signup with username: users011 and email: users011@gmail.com
+2025-11-28 19:04:38 INFO  BaseTest:55 - Account Information section is visible
+2025-11-28 19:04:44 INFO  BaseTest:75 - Filled all account details and submitted the form
+2025-11-28 19:04:45 INFO  BaseTest:80 - Account has been created successfully
+2025-11-28 19:04:49 INFO  BaseTest:86 - User logged in successfully:Logged in as users011
+2025-11-28 19:04:50 INFO  BaseTest:90 - Clicked on Delete Account button
+2025-11-28 19:04:50 INFO  BaseTest:95 - Account has been deleted successfully
+2025-11-28 19:04:59 INFO  BaseTest:28 - ------- TESTCASE 1 : REGISTER USER ----------
+2025-11-28 19:04:59 INFO  BaseTest:35 - Home Page is displayed successfully
+2025-11-28 19:05:00 INFO  BaseTest:39 - Navigated to Signup/Login page
+2025-11-28 19:05:00 INFO  BaseTest:44 - Signup section is visible
+2025-11-28 19:05:01 INFO  BaseTest:50 - Performed signup with username: users012 and email: users012@gmail.com
+2025-11-28 19:05:02 INFO  BaseTest:55 - Account Information section is visible
+2025-11-28 19:05:06 INFO  BaseTest:75 - Filled all account details and submitted the form
+2025-11-28 19:05:06 INFO  BaseTest:80 - Account has been created successfully
+2025-11-28 19:05:09 INFO  BaseTest:86 - User logged in successfully:Logged in as users012
+2025-11-28 19:05:10 INFO  BaseTest:90 - Clicked on Delete Account button
+2025-11-28 19:05:10 INFO  BaseTest:95 - Account has been deleted successfully
+2025-11-28 19:05:18 INFO  BaseTest:28 - ------- TESTCASE 1 : REGISTER USER ----------
+2025-11-28 19:05:18 INFO  BaseTest:35 - Home Page is displayed successfully
+2025-11-28 19:05:23 INFO  BaseTest:39 - Navigated to Signup/Login page
+2025-11-28 19:05:23 INFO  BaseTest:44 - Signup section is visible
+2025-11-28 19:05:23 INFO  BaseTest:50 - Performed signup with username:  and email: 
+2025-11-28 19:05:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-11-28 19:05:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-11-28 19:05:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-11-28 19:05:38 INFO  BaseTest:37 - ------- TESTCASE 2 : LOGIN USER WITH  CORRECT EMAIL AND  PASSWORD ----------
+2025-11-28 19:05:38 INFO  BaseTest:42 - Home Page is displayed successfully
+2025-11-28 19:05:39 INFO  BaseTest:46 - Navigated to Signup/Login page
+2025-11-28 19:05:40 INFO  BaseTest:52 - Login section is visible
+2025-11-28 19:05:40 INFO  BaseTest:59 - fill details and clicked on login button
+2025-11-28 19:05:44 INFO  BaseTest:65 - User logged in successfully: Logged in as users15
+2025-11-28 19:05:46 INFO  BaseTest:69 - Clicked on Delete Account button
+2025-11-28 19:05:46 INFO  BaseTest:73 - Account has been deleted successfully
+2025-11-28 19:05:56 INFO  BaseTest:37 - ------- TESTCASE 2 : LOGIN USER WITH  CORRECT EMAIL AND  PASSWORD ----------
+2025-11-28 19:05:56 INFO  BaseTest:42 - Home Page is displayed successfully
+2025-11-28 19:05:58 INFO  BaseTest:46 - Navigated to Signup/Login page
+2025-11-28 19:05:58 INFO  BaseTest:52 - Login section is visible
+2025-11-28 19:06:08 INFO  BaseTest:22 - ------- TESTCASE 3 : LOGIN USER WITH  INCORRECT EMAIL AND  PASSWORD ----------
+2025-11-28 19:06:08 INFO  BaseTest:27 - Home Page is displayed successfully
+2025-11-28 19:06:10 INFO  BaseTest:31 - Navigated to Signup/Login page
+2025-11-28 19:06:10 INFO  BaseTest:37 - Login section is visible
+2025-11-28 19:06:12 INFO  BaseTest:44 - fill details and clicked on login button
+2025-11-28 19:06:18 INFO  BaseTest:24 - ------- TESTCASE 4 : LOGOUT USER  ----------
+2025-11-28 19:06:18 INFO  BaseTest:28 - Home Page is displayed successfully
+2025-11-28 19:06:20 INFO  BaseTest:30 - Navigated to Signup/Login page
+2025-11-28 19:06:20 INFO  BaseTest:35 - Login Page is displayed successfully
+2025-11-28 19:06:21 INFO  BaseTest:39 - Entered credentials and clicked Login button
+2025-11-28 19:06:26 INFO  BaseTest:45 - User logged in successfully as: Logged in as use11
+2025-11-28 19:06:27 INFO  BaseTest:47 - User clicked Logout button
+2025-11-28 19:06:27 INFO  BaseTest:51 - Successfully navigated back to Login Page after logout
+2025-11-28 19:06:34 INFO  BaseTest:18 - ------- TESTCASE 5 : REGISTER USER with Existing mail ----------
+2025-11-28 19:06:34 INFO  BaseTest:25 - Home Page is displayed successfully
+2025-11-28 19:06:35 INFO  BaseTest:29 - Navigated to Signup/Login page
+2025-11-28 19:06:36 INFO  BaseTest:34 - Signup section is visible
+2025-11-28 19:06:37 INFO  BaseTest:41 - Performed signup with username: users9 and email: users9@gmail.com
+2025-11-28 19:06:42 INFO  BaseTest:19 - ------- TESTCASE 6 : CONTACT US FORM ----------
+2025-11-28 19:06:42 INFO  BaseTest:24 - Home Page is displayed successfully
+2025-11-28 19:06:47 INFO  BaseTest:27 - Navigated to Contact Us page
+2025-11-28 19:06:47 INFO  BaseTest:32 - Contact Us Page is displayed successfully
+2025-11-28 19:06:48 INFO  BaseTest:45 - Entered contact details in the form
+2025-11-28 19:06:48 INFO  BaseTest:49 - Submitted the form and handled alert
+2025-11-28 19:06:48 INFO  BaseTest:53 - Contact form submitted successfully
+2025-11-28 19:06:52 INFO  BaseTest:58 - Successfully navigated back to Home Page
+2025-11-28 19:06:57 INFO  BaseTest:19 - ------- TESTCASE 6 : CONTACT US FORM ----------
+2025-11-28 19:06:57 INFO  BaseTest:24 - Home Page is displayed successfully
+2025-11-28 19:06:59 INFO  BaseTest:27 - Navigated to Contact Us page
+2025-11-28 19:06:59 INFO  BaseTest:32 - Contact Us Page is displayed successfully
+2025-11-28 19:07:00 INFO  BaseTest:45 - Entered contact details in the form
+2025-11-28 19:07:00 INFO  BaseTest:49 - Submitted the form and handled alert
+2025-11-28 19:07:00 INFO  BaseTest:53 - Contact form submitted successfully
+2025-11-28 19:07:03 INFO  BaseTest:58 - Successfully navigated back to Home Page
+2025-11-28 19:07:09 INFO  BaseTest:19 - ------- TESTCASE 6 : CONTACT US FORM ----------
+2025-11-28 19:07:09 INFO  BaseTest:24 - Home Page is displayed successfully
+2025-11-28 19:07:13 INFO  BaseTest:27 - Navigated to Contact Us page
+2025-11-28 19:07:13 INFO  BaseTest:32 - Contact Us Page is displayed successfully
+2025-11-28 19:07:14 INFO  BaseTest:45 - Entered contact details in the form
+2025-11-28 19:07:14 INFO  BaseTest:49 - Submitted the form and handled alert
+2025-11-28 19:07:14 INFO  BaseTest:53 - Contact form submitted successfully
+2025-11-28 19:07:17 INFO  BaseTest:58 - Successfully navigated back to Home Page
+2025-11-28 19:07:24 INFO  BaseTest:19 - ------- TESTCASE 7 : VERIFY TESTCASE PAGE ----------
+2025-11-28 19:07:24 INFO  BaseTest:24 - Home Page is displayed successfully
+2025-11-28 19:07:25 INFO  BaseTest:27 - Navigated to Test Case page
+2025-11-28 19:07:26 INFO  BaseTest:32 - Test Case Page is displayed successfully
+2025-11-28 19:07:33 INFO  BaseTest:21 - ------- TESTCASE 8 : VERIFY ALL PRODUCTS AND PRODUCT DETAIL PAGE ----------
+2025-11-28 19:07:33 INFO  BaseTest:28 - Home Page is displayed successfully
+2025-11-28 19:07:35 INFO  BaseTest:34 - Clicked on 'Products' menu
+2025-11-28 19:07:35 INFO  BaseTest:40 - Products Page is visible successfully
+2025-11-28 19:07:35 INFO  BaseTest:47 - Product list is displayed successfully
+2025-11-28 19:07:38 INFO  BaseTest:51 - Clicked on 'View Product' for a product
+2025-11-28 19:07:38 INFO  BaseTest:55 - Product Details Page is visible successfully
+2025-11-28 19:07:38 INFO  BaseTest:59 - Product name is visible
+2025-11-28 19:07:38 INFO  BaseTest:62 - Product category is visible
+2025-11-28 19:07:38 INFO  BaseTest:65 - Product cost is visible
+2025-11-28 19:07:38 INFO  BaseTest:68 - Product availability is visible
+2025-11-28 19:07:38 INFO  BaseTest:71 - Product condition is visible
+2025-11-28 19:07:38 INFO  BaseTest:74 - Product brand is visible
+2025-11-28 19:07:42 INFO  BaseTest:19 - ------- TESTCASE 9 : SEARCH PRODUCT PAGE ----------
+2025-11-28 19:07:42 INFO  BaseTest:26 - Home Page is displayed successfully
+2025-11-28 19:07:45 INFO  BaseTest:31 - Clicked on 'Products' menu
+2025-11-28 19:07:45 INFO  BaseTest:37 - Products Page is visible successfully
+2025-11-28 19:07:52 INFO  BaseTest:19 - ------- TESTCASE 9 : SEARCH PRODUCT PAGE ----------
+2025-11-28 19:07:52 INFO  BaseTest:26 - Home Page is displayed successfully
+2025-11-28 19:07:57 INFO  BaseTest:31 - Clicked on 'Products' menu
+2025-11-28 19:07:57 INFO  BaseTest:37 - Products Page is visible successfully
+2025-11-28 19:08:07 INFO  BaseTest:17 - ------- TESTCASE 10 : VERIFY SUBSCRIPTION IN HOME PAGE ----------
+2025-11-28 19:08:07 INFO  BaseTest:22 - Home Page is displayed successfully
+2025-11-28 19:08:08 INFO  BaseTest:27 - Entered subscription email: usersname3@gmail.com
+2025-11-28 19:08:08 INFO  BaseTest:31 - Clicked on 'Subscribe' button
+2025-11-28 19:08:08 INFO  BaseTest:35 - Subscription success message displayed successfully for email: usersname3@gmail.com
+2025-11-28 19:08:16 INFO  BaseTest:19 - ------- TESTCASE 11 : VERIFY SUBSCRIPTION IN CART PAGE ----------
+2025-11-28 19:08:16 INFO  BaseTest:24 - Home Page is displayed successfully
+2025-11-28 19:08:18 INFO  BaseTest:28 - Clicked on 'Cart' link
+2025-11-28 19:08:18 INFO  BaseTest:32 - Cart Page is displayed successfully
+2025-11-28 19:08:18 INFO  BaseTest:37 - Entered subscription email: usersname3@gmail.com
+2025-11-28 19:08:19 INFO  BaseTest:41 - Clicked on 'Subscribe' button
+2025-11-28 19:08:19 INFO  BaseTest:45 - Subscription success message displayed successfully for email: usersname3@gmail.com
+2025-11-28 19:08:24 INFO  BaseTest:26 - ----------- TESTCASE 12 : ADD PRODUCTS IN CART --------------
+2025-11-28 19:08:24 INFO  BaseTest:31 - Home Page is displayed successfully
+2025-11-28 19:08:29 INFO  BaseTest:35 - Clicked on 'Products' menu
+2025-11-28 19:08:29 INFO  BaseTest:40 - Products Page is displayed successfully
+2025-11-28 19:08:30 INFO  BaseTest:57 - Added first product to cart
+2025-11-28 19:08:31 INFO  BaseTest:74 - Added second product to cart
+2025-11-28 19:08:32 INFO  BaseTest:78 - Navigated to Cart Page
+2025-11-28 19:08:32 INFO  BaseTest:86 - Cart Page is visible successfully
+2025-11-28 19:08:32 INFO  BaseTest:92 - Cart contains 2 products as expected
+2025-11-28 19:08:33 INFO  BaseTest:99 - Verified first product name matches
+2025-11-28 19:08:33 INFO  BaseTest:104 - Verified product price matches
+2025-11-28 19:08:33 INFO  BaseTest:109 - Verified total amount matches
+2025-11-28 19:08:33 INFO  BaseTest:115 - Verified total cart quantity
+2025-11-28 19:08:33 INFO  BaseTest:121 - Verified second product name matches
+2025-11-28 19:08:33 INFO  BaseTest:128 - Verified product price matches
+2025-11-28 19:08:33 INFO  BaseTest:135 - Verified total amount matches
+2025-11-28 19:08:33 INFO  BaseTest:141 - Verified total cart quantity
+2025-11-28 19:08:41 INFO  BaseTest:26 - ----------- TESTCASE 12 : ADD PRODUCTS IN CART --------------
+2025-11-28 19:08:41 INFO  BaseTest:31 - Home Page is displayed successfully
+2025-11-28 19:08:44 INFO  BaseTest:35 - Clicked on 'Products' menu
+2025-11-28 19:08:44 INFO  BaseTest:40 - Products Page is displayed successfully
+2025-11-28 19:08:45 INFO  BaseTest:57 - Added first product to cart
+2025-11-28 19:08:46 INFO  BaseTest:74 - Added second product to cart
+2025-11-28 19:08:48 INFO  BaseTest:78 - Navigated to Cart Page
+2025-11-28 19:08:48 INFO  BaseTest:86 - Cart Page is visible successfully
+2025-11-28 19:08:48 INFO  BaseTest:92 - Cart contains 2 products as expected
+2025-11-28 19:08:48 INFO  BaseTest:99 - Verified first product name matches
+2025-11-28 19:08:48 INFO  BaseTest:104 - Verified product price matches
+2025-11-28 19:08:48 INFO  BaseTest:109 - Verified total amount matches
+2025-11-28 19:08:48 INFO  BaseTest:115 - Verified total cart quantity
+2025-11-28 19:08:48 INFO  BaseTest:121 - Verified second product name matches
+2025-11-28 19:08:48 INFO  BaseTest:128 - Verified product price matches
+2025-11-28 19:08:48 INFO  BaseTest:135 - Verified total amount matches
+2025-11-28 19:08:48 INFO  BaseTest:141 - Verified total cart quantity
+2025-11-28 19:08:54 INFO  BaseTest:21 - ----------- TESTCASE 13: VERIFY PRODUCT Quantity In Cart  --------------
+2025-11-28 19:08:54 INFO  BaseTest:26 - Home Page is displayed successfully
+2025-11-28 19:08:59 INFO  BaseTest:31 - Clicked on 'Products' menu
+2025-11-28 19:08:59 INFO  BaseTest:36 - Products Page is displayed successfully
+2025-11-28 19:08:59 INFO  BaseTest:40 - Product list is displayed successfully
+2025-11-28 19:09:00 INFO  BaseTest:44 - Clicked on 'View Product' for a product
+2025-11-28 19:09:00 INFO  BaseTest:48 - Product Details Page is visible successfully
+2025-11-28 19:09:02 INFO  BaseTest:70 - Cart Page is visible successfully
+2025-11-28 19:09:02 INFO  BaseTest:78 - Verified total cart quantity successfully
+2025-11-28 19:09:03 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-11-28 19:09:03 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-11-28 19:09:03 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-11-28 19:09:10 INFO  BaseTest:32 - ----------- TESTCASE 14 :  Place Order Register While Checkout --------------
+2025-11-28 19:09:10 INFO  BaseTest:37 - Home Page is displayed successfully
+2025-11-28 19:09:14 INFO  BaseTest:42 - Clicked on 'Products' menu
+2025-11-28 19:09:14 INFO  BaseTest:47 - Products Page is displayed successfully
+2025-11-28 19:09:14 INFO  BaseTest:51 - Add product to cart
+2025-11-28 19:09:16 INFO  BaseTest:55 - Navigated to Cart Page
+2025-11-28 19:09:16 INFO  BaseTest:64 - Cart Page is visible successfully
+2025-11-28 19:09:17 INFO  BaseTest:68 - Clicked on Checkout Button
+2025-11-28 19:09:18 INFO  BaseTest:71 - Navigated to Login/Signup Page
+2025-11-28 19:09:19 INFO  BaseTest:77 - Signup section is visible
+2025-11-28 19:09:20 INFO  BaseTest:83 - Performed signup with username: user1 and email: userss201@test.com
+2025-11-28 19:09:20 INFO  BaseTest:88 - Account Information section is visible
+2025-11-28 19:09:26 INFO  BaseTest:108 - Filled all account details and submitted the form
+2025-11-28 19:09:26 INFO  BaseTest:113 - Account has been created successfully
+2025-11-28 19:09:29 INFO  BaseTest:119 - User logged in successfully:Logged in as user1
+2025-11-28 19:09:30 INFO  BaseTest:123 - Cart Page is visible successfully

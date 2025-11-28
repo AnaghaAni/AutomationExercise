@@ -2,8 +2,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="loginmail" value="users2@gmail.com"/>
+  <parameter name="prdId" value="1"/>
+  <parameter name="logoutMail" value="use11@gmail.com"/>
   <parameter name="mail" value="users9@gmail.com"/>
   <parameter name="loginpassword" value="usersname2"/>
+  <parameter name="logoutPassword" value="use11"/>
   <parameter name="username" value="users9"/>
   <listeners>
     <listener class-name="listeners.TestListeners"/>
@@ -12,13 +15,48 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="tests.VerifyProductQuantityInCart">
+        <methods>
+          <include name="testVerifyProductQuantityInCart"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.VerifyProductQuantityInCart -->
       <class name="tests.SearchProductTest">
         <methods>
-          <include name="testSearchProduct" invocation-numbers="1"/>
+          <include name="testSearchProduct" invocation-numbers="0 1"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.SearchProductTest -->
+      <class name="tests.ViewCategoryProducts">
+        <methods>
+          <include name="testViewCategoryProducts"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.ViewCategoryProducts -->
+      <class name="tests.SignUpTest">
+        <methods>
+          <include name="testUserRegistrationFlow" invocation-numbers="2"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.SignUpTest -->
+      <class name="tests.ProductDetailsTest">
+        <methods>
+          <include name="testProductTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.ProductDetailsTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="testLogin" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

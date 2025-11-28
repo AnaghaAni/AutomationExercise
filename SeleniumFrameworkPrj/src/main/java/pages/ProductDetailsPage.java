@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+
 //Page Object Class for the Product Details page
 public class ProductDetailsPage extends BasePage {
 
@@ -14,8 +15,10 @@ public class ProductDetailsPage extends BasePage {
  By availabilityLoc = By.xpath("//b[contains(text(),'Availability:')]");
  By conditionLoc = By.xpath("//b[contains(text(),'Condition:')]");
  By brandLoc = By.xpath("//b[contains(text(),'Brand:')]");
+ By addCartBtn = By.xpath("//button[@class='btn btn-default cart']");
 
- // Constructor
+
+   // Constructor
 	 public ProductDetailsPage(WebDriver driver) 
 	 {
 	     super(driver); // Initialize BasePage
@@ -32,6 +35,8 @@ public class ProductDetailsPage extends BasePage {
 	 {
 	     return getCurrentUrl().contains("/product_details/1");
 	 }
+	 
+	
 	
 	 // Verify product name is visible
 	 public boolean isProductName()
@@ -74,10 +79,23 @@ public class ProductDetailsPage extends BasePage {
 	 {
 	     return isElementVisible(brandLoc);
 	 }
+	 
+	 
+	// Clicks on the "Add to Cart" button
+	 public void clickOnAddCartBtn() 
+	 {
+		 click(addCartBtn);	
+	 }
 	
 	 // Set the quantity for the product
-	 public void setQuantity(String quantity) {
-	     findElement(quantityLoc).clear();
+	 public void setQuantity(String quantity) 
+	 {
+		 
 	     type(quantityLoc, quantity);
+	 }
+	 
+	 public String getSetQuantity()
+	 {
+		 return getAttribute(quantityLoc);
 	 }
 }

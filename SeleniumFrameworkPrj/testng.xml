@@ -5,15 +5,22 @@
 	<parameter name="username" value="users9"></parameter>
 	<parameter name="mail" value="users9@gmail.com"></parameter>
 	
-	<parameter name="logoutMail" value="users9@gmail.com"></parameter>
-	<parameter name="logoutPassword" value="users9@123"></parameter>
+	<parameter name="logoutMail" value="use11@gmail.com"></parameter>
+	<parameter name="logoutPassword" value="use11"></parameter>
 	
 	<parameter name="loginmail" value="users2@gmail.com"></parameter>
 	<parameter name="loginpassword" value="usersname2"></parameter>
+	
+	<parameter name="prdId" value="1"></parameter>
+
 
 	<listeners>
 		<listener class-name="listeners.TestListeners"></listener>
 	</listeners>
+
+
+
+
 
 
 	  <test thread-count="5" name="Test">
@@ -21,7 +28,8 @@
 	  	<parameter name="browser" value="chrome"/>	
 	    <classes>
 
-			 <class name ="tests.SignUpTest"/> 
+		
+			<class name ="tests.SignUpTest"/> 
 			 <class name="tests.LoginTest"/>
 	    	 <class name="tests.LoginwithInvalidCredantials"/> 
 			 <class name ="tests.logoutUserTest"/>
@@ -31,6 +39,14 @@
 	   		 <class name ="tests.ProductDetailsTest"/> 
 	   		 <class name="tests.SearchProductTest"/> 
 	   		 <class name="tests.SubscriptionTest"/>
+	   		 <class name ="tests.SubscriptionInCartPageTest"/> 
+	   		 <class name="tests.AddProductsInCart" />
+	   		 <class name="tests.VerifyProductQuantityInCart" />
+	   		 <class name="tests.PlaceOrderRegisterWhileCheckout" />
+	   		 <class name="tests.PlaceOrderRegisterBeforeCheckout" />
+	   		 <class name="tests.RemoveProductsFromCart" />
+			<class name="tests.ViewCategoryProducts" />
+	
 
 
 	   	</classes>

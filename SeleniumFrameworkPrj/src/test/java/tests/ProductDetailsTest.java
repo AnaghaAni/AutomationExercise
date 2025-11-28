@@ -47,7 +47,7 @@ public class ProductDetailsTest extends BaseTest{
 	    logger.info("Product list is displayed successfully");
 
 	    // Navigate to Product Details Page
-	    productPage.clickViewProduct();
+	    productPage.clickViewProduct(1);
 	    logger.info("Clicked on 'View Product' for a product");
 
 	    ProductDetailsPage productDetail = new ProductDetailsPage(driverRef);
